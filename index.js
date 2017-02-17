@@ -62,3 +62,10 @@ exports.handler = function(event, context) {
   }
 ]
 */
+
+"use strict";
+console.log("Loading hello world function");
+exports.handler = function(event, context) {
+    console.log(event);
+    console.log(context);
+};
