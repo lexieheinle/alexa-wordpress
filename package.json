@@ -1,0 +1,29 @@
+{
+  "name": "alexa-wordpress",
+  "version": "1.0.0",
+  "description": "Node.js program to format WP json to Alexa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lexieheinle/alexa-wordpress.git"
+  },
+  "keywords": [
+    "Alexa",
+    "node"
+  ],
+  "author": "lexieheinle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lexieheinle/alexa-wordpress/issues"
+  },
+  "homepage": "https://github.com/lexieheinle/alexa-wordpress#readme",
+  "devDependencies": {
+    "aws-lambda-local": "^1.0.14"
+  },
+  "dependencies": {
+    "request": "^2.79.0"
+  }
+}
