@@ -4,7 +4,11 @@
   "description": "Node.js program to format WP json to Alexa",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "claudia create --region us-east-1 --deploy-proxy-api --handler main.handler --role claudia",
+    "destroy": "claudia destroy",
+    "update": "claudia update",
+    "test": "claudia test-lambda",
+    "test-scrap": "node lib/news.js"
   },
   "repository": {
     "type": "git",
@@ -21,9 +25,10 @@
   },
   "homepage": "https://github.com/lexieheinle/alexa-wordpress#readme",
   "devDependencies": {
-    "aws-lambda-local": "^1.0.14"
+    "claudia": "^2.9.0"
   },
   "dependencies": {
-    "request": "^2.79.0"
+    "request": "^2.79.0",
+    "request-promise": "^4.1.1"
   }
 }

@@ -1,0 +1,10 @@
+{
+  "lambda": {
+    "role": "claudia",
+    "name": "alexa-wordpress",
+    "region": "us-east-1"
+  },
+  "api": {
+    "id": "w3tg0nxqca"
+  }
+}
