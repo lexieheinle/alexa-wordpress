@@ -8,11 +8,12 @@ exports.handler = function (event, context) {
 		headers: { 'Content-Type': 'application/json' },
 		body: getNews(),
 	});*/
+  'use strict';
   news.getRecent().then(function(feed_response) {
     context.succeed({
   		statusCode: 200,
   		headers: { 'Content-Type': 'application/json' },
-  		body: feed_response,
+  		body: JSON.stringify(feed_response),
   	});
   }).catch(function(reason) {
     context.fail('Unable to get news. Try again later.' + reason)
