@@ -2,12 +2,6 @@
 var news = require('./lib/news.js');
 
 exports.handler = function (event, context) {
-
-	/*context.succeed({
-		statusCode: 200,
-		headers: { 'Content-Type': 'application/json' },
-		body: getNews(),
-	});*/
   'use strict';
   news.getRecent().then(function(feed_response) {
     context.succeed({
